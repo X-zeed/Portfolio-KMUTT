@@ -203,6 +203,10 @@ h3 {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+.logo-item img:hover{
+  transform: scale(1.1);
+}
+
 .logo-item span {
   font-size: 0.85rem;
   color: #444;

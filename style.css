@@ -364,17 +364,19 @@ h3 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-block: 30px 70px;
+  padding-block: 30px 30px;
   padding-inline: 20px;
   width: 100%;
+  min-height: 200px;
   background: var(--color-white);
   box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
   border-radius: 20px;
+  margin-bottom: 30px; /* เพิ่มระยะห่างระหว่าง about-info กับ skills */
 }
 
 .about-info p {
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   color: #777;
 }
 
@@ -397,53 +399,29 @@ h3 {
 }
 
 .skills-header {
-  margin-bottom: 30px;
+  margin-bottom: -5px;
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
 }
 
-.skills-list span {
-  font-size: 14px;
-  background: var(--first-color);
-  color: var(--color-white);
-  padding: 2px 10px;
-  border-radius: 5px;
+.skills-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.skills-list2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+.skills-list img:hover {
+  transform: scale(1.1);
 }
-
-.skills-list2 span {
-  font-size: 14px;
-  background: var(--first-color);
-  color: var(--color-white);
-  padding: 2px 10px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-/* .skills-list2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    gap: 5px;
-}
-
-.skills-list2 span {
-    font-size: 14px;
-    background: var(--first-color);
-    color: var(--color-white);
-    padding: 2px 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    align-items: center;
-    display: flex;
-} */
 
 /* ----- PROJECTS BOX ----- */
 .project-container {
